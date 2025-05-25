@@ -1,0 +1,130 @@
+.heroSection {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../public/portfolio-bg.jpg'); /* Adjust path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 50px;
+  }
+  
+  .container {
+    display: flex;
+    max-width: 1200px;
+    margin: 80px 80px;
+    height: 600px;
+    max-width: 1700px;
+  }
+
+  .title {
+    font-size: 7rem;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+
+  .subtitle {
+    margin-top: 1rem;
+    font-size: 1.9rem;
+    font-weight: 500;
+    color: #ccc;
+  }
+  
+  .accentBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2rem;
+  }
+  
+  .dot {
+    width: 25px;
+    height: 25px;
+    background-color: #a259ff;
+    border-radius: 50%;
+  }
+  
+  .line {
+    width: 7px;
+    height: 500px;
+    background-color: #a259ff;
+    background: linear-gradient(to bottom, #a259ff, rgba(162, 89, 255, 0));
+  }
+
+  .textBlock {
+    text-align: start;
+    width: 100%;
+  }
+  .threeDModel{
+   margin-top: 100px;
+  }
+
+  @media (max-width: 1700px ) {
+    /* .threeDModel{
+      margin-top: 00px;
+    } */
+  }
+
+  @media (max-width: 1082px ) {
+    .title {
+      font-size: 5rem;
+    }
+    .subtitle {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 880px ) {
+    .container{
+      width: 100%;
+      margin: 80px 20px;
+    }
+    .title {
+      font-size: 3.5rem;
+    }
+    .threeDModel{
+      display: none;
+     }
+  }
+
+  @media (max-width: 460px) {
+    .line {
+      width: 7px;
+      height: 250px;
+    }
+    .accentBar {
+      margin-right: 0.5rem;
+    }
+    .title {
+      font-size: 2rem;
+    }
+    .subtitle {
+      font-size: 0.8rem;
+    }
+    .container {
+      display: flex;
+      height: 600px;
+    }
+  
+  }
+  
+  @media (min-width: 768px) {
+    .line {
+      height: 500px;
+    }
+  }
+  
+ 
+  
+  @media (max-width: 430px) {
+    .threeDModel{
+      margin-top: -200px;
+    }
+  }
+  
+  .highlight {
+    color: #a259ff;
+  }
+  
+  
