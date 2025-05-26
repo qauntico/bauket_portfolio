@@ -1,0 +1,46 @@
+.section {
+  padding: 3rem 1rem;
+  max-width: 1800px;
+  margin: 0 auto;
+  color: white;
+}
+.intro {
+  text-align: center;
+}
+.sectionTitle {
+  font-size: 90px;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+.allSkills {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cardSkills {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.cardSkills h6 {
+  font-weight: 1000;
+}
+.icon {
+  width: fit-content;
+}
+
+/* Responsive styles: use max-width not min-width */
+@media (max-width: 1900px) {
+  .section {
+    width: 90%;
+  }
+}
+@media (max-width: 960px) {
+  .sectionTitle {
+    font-size: 45px;
+  }
+}

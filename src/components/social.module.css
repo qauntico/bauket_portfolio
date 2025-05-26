@@ -1,0 +1,37 @@
+.section {
+  padding: 3rem 1rem;
+  max-width: 1800px;
+  margin: 0 auto;
+  color: white;
+}
+.intro{
+    text-align: center;
+  }
+  .sectionTitle {
+    font-size: 90px;
+    font-weight: 800;
+    margin-bottom: 3.5rem;
+  }
+  .social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+/* Responsive styles: use max-width not min-width */
+@media (max-width: 1900px) {
+  .section {
+    width: 90%;
+  }
+}
+@media (max-width: 960px) {
+    .sectionTitle {
+        font-size: 45px;
+      }
+  }
+  @media (max-width: 600px) {
+    .socialIcon{
+        width: 50px;
+        height: 40px;
+    }
+  }
