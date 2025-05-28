@@ -1,4 +1,5 @@
 //import Image from "next/image";
+import ContactSection from '@/components/contact';
 import Hero from '@/components/hero'
 import OverviewSection from '@/components/overview';
 import ProjectCardsSection from '@/components/projects';
@@ -16,6 +17,7 @@ export default function Home() {
       <Skills />
       <ProjectCardsSection />
       <Socials />
+      <ContactSection />
     </div>
   );
 }

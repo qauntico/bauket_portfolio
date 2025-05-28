@@ -1,0 +1,11 @@
+.canva{
+    height: 570px;
+    min-width:  600px;
+    border-radius: 100px;
+}
+
+@media (max-width: 1200px) {
+    .canva{
+        display: none;
+    }
+}

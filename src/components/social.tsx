@@ -3,7 +3,7 @@
 import styles from "./social.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import { motion, } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function Socials() {
   const socials = [
@@ -11,8 +11,8 @@ export default function Socials() {
     { title: "LinkedIn", icon: "/icons/linkedin.png", link: "" },
     { title: "Google", icon: "/icons/google.png", link: "" },
   ];
-   // Animation variants
-   const fadeInUp = {
+  // Animation variants
+  const fadeInUp = {
     hidden: { opacity: 0, y: -50 },
     visible: {
       opacity: 1,
@@ -28,17 +28,20 @@ export default function Socials() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
       >
-        <motion.h2 className={styles.sectionTitle} variants={fadeInUp}>
-          Contacts
-        </motion.h2>
+        <div className={styles.social}>
+          {socials.map((social, index) => (
+            <Link key={index} href={social.link}>
+              <Image
+                src={social.icon}
+                alt={social.title}
+                width={80}
+                height={100}
+                className={styles.socialIcon}
+              ></Image>
+            </Link>
+          ))}
+        </div>
       </motion.div>
-      <div className={styles.social}>
-        {socials.map((social, index) => (
-          <Link key={index} href={social.link}>
-            <Image src={social.icon} alt={social.title} width={80} height={100} className={styles.socialIcon}></Image>
-          </Link>
-        ))}
-      </div>
     </section>
   );
 }
