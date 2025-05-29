@@ -23,7 +23,7 @@ export default function Hero() {
           <p className={styles.subtitle}>
             A full stack web <br />
             and mobile developer, <br />
-            Data Scientist/ML engineer
+            Cloud Engineer
           </p>
         </div>
       </div>

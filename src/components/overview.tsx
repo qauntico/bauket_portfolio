@@ -1,16 +1,16 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import Tilt from 'react-parallax-tilt';
+import { motion } from "framer-motion";
+import Tilt from "react-parallax-tilt";
 import Image from "next/image";
-import styles from './overview.module.css';
+import styles from "./overview.module.css";
 
 const services = [
-  { title: 'Web Developer', icon: '/icons/programmer.png' },
-  { title: 'Mobile Developer', icon: '/icons/mobile-phone.png' },
-  { title: 'Backend Developer', icon: '/icons/backend.png' },
-  { title: 'Database', icon: '/icons/database.png' },
-  { title: 'AWS', icon: '/icons/hosting.png' },
+  { title: "Web Developer", icon: "/icons/programmer.png" },
+  { title: "Mobile Developer", icon: "/icons/mobile-phone.png" },
+  { title: "Backend Developer", icon: "/icons/backend.png" },
+  { title: "Database", icon: "/icons/database.png" },
+  { title: "AWS", icon: "/icons/hosting.png" },
 ];
 
 // Animation variants
@@ -19,7 +19,7 @@ const fadeInUp = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.8, ease: 'easeOut' },
+    transition: { duration: 0.8, ease: "easeOut" },
   },
 };
 
@@ -31,14 +31,14 @@ const cardVariants = {
     transition: {
       delay: i * 0.2,
       duration: 0.8,
-      ease: 'easeOut',
+      ease: "easeOut",
     },
   }),
 };
 
 export default function OverviewSection() {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="sayhi">
       {/* Animated intro */}
       <motion.div
         className={styles.intro}
@@ -53,7 +53,12 @@ export default function OverviewSection() {
           Overview
         </motion.h2>
         <motion.p className={styles.description} variants={fadeInUp}>
-          Skilled full-stack developer proficient in JavaScript, TypeScript, Python, React, Node.js, and Django. Experienced data scientist and machine learning engineer, adept at leveraging cutting-edge techniques to drive impactful business outcomes. Quick learner and collaborative partner, dedicated to creating efficient, scalable, and user-friendly solutions.
+          Skilled full-stack developer proficient in JavaScript, TypeScript,
+          Python, React, Node.js. Experienced cloud and
+          software engineer, adept at leveraging cutting-edge techniques
+          to drive impactful business outcomes. Quick learner and collaborative
+          partner, dedicated to creating efficient, scalable, and user-friendly
+          solutions.
         </motion.p>
       </motion.div>
 

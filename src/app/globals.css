@@ -108,7 +108,9 @@
     --chart-5: 340 75% 55%
   }
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;
