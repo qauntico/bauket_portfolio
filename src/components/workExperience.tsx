@@ -23,7 +23,11 @@ const experiences = [
     summary:
       "Backend Developer",
     details: [
-      "Managed company backend infrastruture on AWS",
+      "Help manage the company’s cloud infrastructure, including regular data backups.",
+      "Check application logs to monitor performance and catch errors early.",
+      "Debug bugs and issues in the backend systems.",
+      "Work closely with the team to build and add new features to the core application(ayatickets).",
+      "Implement caching solutions for static data using AWS CloudFront to improve application speed and performance."
     ],
   },
   {
