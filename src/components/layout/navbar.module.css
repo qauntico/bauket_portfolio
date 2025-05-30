@@ -8,7 +8,7 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 1rem;
     margin: 1rem auto;
-    max-width: 90%;
+    max-width: 70%;
     box-shadow: 0 0 0 1px rgba(162, 89, 255, 0.3)
   }
 
@@ -33,6 +33,9 @@
     text-decoration: none;
     color: white;
     font-weight: 600;
+  }
+  .navLinks li:hover {
+    text-decoration: underline;
   }
   
   .menuBtn {

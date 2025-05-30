@@ -7,7 +7,7 @@ import ThreeDModel from './subComponents/threeDModel';
 export default function Hero() {
  
   return (
-    <section className={styles.heroSection}>
+    <section className={styles.heroSection} id="home">
       <div className={styles.container}>
         {/* Left Accent Bar */}
         <div className={styles.accentBar}>

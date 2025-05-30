@@ -9,11 +9,16 @@ const projects = [
     title: "Internship Listing Site",
     category: "Web App",
     description:
-      "a mobile platform that allows users contact and trade their crypto currencies.",
+      "A web application where companies can easily list out internships and management them while students or interns can easily apply for them base on certain system policies.",
     image: "/projects/internship.png", // Replace with your image path
     tags: [
-      { label: "#react native", color: "#74f9c5" },
+      { label: "#Next js", color: "#74f9c5" },
       { label: "#mongodb", color: "#4ffbdf" },
+      { label: "#Express", color: "#53baff" },
+      { label: "#Node", color: "#eb5e7a" },
+      { label: "#Javascript", color: "#4ffbdf" },
+      { label: "#Firebase", color: "#53baff" },
+      { label: "#Render", color: "#eb5e7a" },
     ],
     link: "https://www.explortern.online/",
   },
@@ -21,38 +26,41 @@ const projects = [
     title: "Event Listing Site",
     category: "Web App",
     description:
-      "Web application that enables students to upload couses, view their results,take quizes etc.",
+      "This is a web application that help manage listing of events and selling tickets with a braintree credit payment system..",
     image: "/projects/event.png", // Replace with your image path
     tags: [
       { label: "#react", color: "#53baff" },
-      { label: "#Django", color: "#41e3a3" },
-      { label: "#postgreSQL", color: "#eb5e7a" },
+      { label: "#Express", color: "#41e3a3" },
+      { label: "#MongoDB", color: "#eb5e7a" },
+      { label: "#react", color: "#53baff" },
+      { label: "#Node", color: "#41e3a3" },
+      { label: "#Javascript", color: "#eb5e7a" },
     ],
     link: "https://event-listing-46bb7.web.app/",
   },
   {
     title: "Business Management Software",
     category: "Web App",
-    description: "An admin section for Galio students",
+    description: "A desktop application designed to streamline inventory management, track products, and monitor purchases. Built with a user-friendly interface to simplify business operations.",
     image: "/projects/business.png", // Replace with your image path
     tags: [
-      { label: "#React and typescript", color: "#6eaaff" },
-      { label: "#Nodejs", color: "#41e3a3" },
-      { label: "#tailwindcss", color: "#ff63f6" },
-      { label: "#PostgreSQL", color: "#eb5e7a" },
+      { label: "#PyQt", color: "#6eaaff" },
+      { label: "#QtDesigner", color: "#41e3a3" },
+      { label: "#python", color: "#ff63f6" },
+      { label: "#MySQL", color: "#eb5e7a" },
     ],
     link: "https://github.com/qauntico/Business-application-.git",
   },
   {
     title: "Note Taking Application",
     category: "Desktop App",
-    description: "An admin section for Galio students",
+    description: "A customize note taking application",
     image: "/projects/note.png", // Replace with your image path
     tags: [
-      { label: "#React and typescript", color: "#6eaaff" },
-      { label: "#Nodejs", color: "#41e3a3" },
-      { label: "#tailwindcss", color: "#ff63f6" },
-      { label: "#PostgreSQL", color: "#eb5e7a" },
+      { label: "#PyQt", color: "#6eaaff" },
+      { label: "#MySQL", color: "#41e3a3" },
+      { label: "#QtDesigner", color: "#ff63f6" },
+      { label: "#Python", color: "#eb5e7a" },
     ],
     link: "https://github.com/qauntico/NotePad-Application-.git",
   },
@@ -70,7 +78,7 @@ const fadeInUp = {
 
 export default function ProjectCardsSection() {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="project">
       {/* Animated intro */}
       <motion.div
         className={styles.intro}
@@ -79,18 +87,17 @@ export default function ProjectCardsSection() {
         viewport={{ once: true, amount: 0.3 }}
       >
         <motion.p className={styles.subtitle} variants={fadeInUp}>
-          INTRODUCTION
+          My work
         </motion.p>
         <motion.h2 className={styles.projectTitle} variants={fadeInUp}>
           Projects
         </motion.h2>
         <motion.p className={styles.description} variants={fadeInUp}>
-          Skilled full-stack developer proficient in JavaScript, TypeScript,
-          Python, React, Node.js, and Django. Experienced data scientist and
-          machine learning engineer, adept at leveraging cutting-edge techniques
-          to drive impactful business outcomes. Quick learner and collaborative
-          partner, dedicated to creating efficient, scalable, and user-friendly
-          solutions.
+          Following projects showcases my skills and experience through
+          real-world examples of my work. Each project is briefly described with
+          links to code repositories and live demos in it. It reflects my
+          ability to solve complex problems, work with different technologies,
+          and manage projects effectively.
         </motion.p>
       </motion.div>
 

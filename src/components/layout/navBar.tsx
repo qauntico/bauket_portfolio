@@ -25,9 +25,12 @@ export default function Navbar() {
         </button>
 
         <ul className={`${styles.navLinks} ${menuOpen ? styles.showMenu : ""}`}>
-          <li><Link href="#projects">Projects</Link></li>
-          <li><Link href="#sayhi">Say hi</Link></li>
-          <li><Link href="#resume">Resume</Link></li>
+          <li><Link href="#home">Home</Link></li>
+          <li><Link href="#overview">Overview</Link></li>
+          <li><Link href="#work">Work Experiences</Link></li>
+          <li><Link href="#project">Projects</Link></li>
+          <li><Link href="#contact">Contact</Link></li>
+          <li><Link href="#">Resume</Link></li>
         </ul>
       </div>
     </nav>

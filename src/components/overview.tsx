@@ -38,7 +38,7 @@ const cardVariants = {
 
 export default function OverviewSection() {
   return (
-    <section className={styles.section} id="sayhi">
+    <section className={styles.section} id="overview">
       {/* Animated intro */}
       <motion.div
         className={styles.intro}
