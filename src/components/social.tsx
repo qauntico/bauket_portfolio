@@ -7,8 +7,8 @@ import { motion } from "framer-motion";
 
 export default function Socials() {
   const socials = [
-    { title: "Github", icon: "/skills/github.png", link: "" },
-    { title: "LinkedIn", icon: "/icons/linkedin.png", link: "" },
+    { title: "Github", icon: "/skills/github.png", link: "https://github.com/qauntico" },
+    { title: "LinkedIn", icon: "/icons/linkedin.png", link: "https://www.linkedin.com/in/bauket-fabrice-qauntum/" },
     { title: "Google", icon: "/icons/google.png", link: "" },
   ];
   // Animation variants
@@ -30,7 +30,7 @@ export default function Socials() {
       >
         <div className={styles.social}>
           {socials.map((social, index) => (
-            <Link key={index} href={social.link}>
+            <Link key={index} href={social.link} target="_blank">
               <Image
                 src={social.icon}
                 alt={social.title}

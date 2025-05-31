@@ -11,9 +11,12 @@ export default function ContactSection() {
     email: "",
     message: "",
   });
+  const [isLoading, setIsLoading] = useState(false);
 
   // Handle input change
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
 
     setFormData((prev) => ({
@@ -23,11 +26,29 @@ export default function ContactSection() {
   };
 
   // Submit handler
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    console.log("Submitted Data:", formData);
+    setIsLoading(true);
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
+      const data = await response.json();
+      if (data.success) {
+        console.log("Email sent successfully!");
+      } else {
+        console.error("Failed to send email:", data.error);
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
+    setIsLoading(false);
     // Reset form
     setFormData({
       name: "",
@@ -80,8 +101,12 @@ export default function ContactSection() {
               ></textarea>
             </div>
 
-            <button type="submit" className={styles.button}>
-              send
+            <button
+              type="submit"
+              className={styles.button}
+              disabled={isLoading}
+            >
+              {isLoading ? "Sending..." : "Send"}
             </button>
           </form>
         </div>
