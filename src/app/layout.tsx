@@ -14,8 +14,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Bauket Fabrice Portfolio",
-  description: "This is bauket fabrice portfolio",
+  title: "My Portfolio | Bauket Fabrice", // Application Name
+  description: "A portfolio showcasing Bauket Fabrice work, skills, and projects.",
+  keywords: ["portfolio", "web developer", "projects", "skills", "contact"],
+  authors: [{ name: "Bauket Fabrice" }],
+  icons: {
+    icon: "/vercel.svg", // Path relative to the /public folder
+    shortcut: "/vercel.svg", // Optional: for Apple and other shortcuts
+    apple: "/vercel.svg", // Optional: for iOS home screen icons
+  },
 };
 
 export default function RootLayout({
@@ -28,7 +35,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-       <Navbar />
+        <Navbar />
         {children}
       </body>
     </html>
