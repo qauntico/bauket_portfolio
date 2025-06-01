@@ -1,4 +1,5 @@
 // src/app/api/contact/route.ts
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import nodemailer from "nodemailer";
 import { NextResponse } from "next/server";
