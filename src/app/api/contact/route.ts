@@ -1,4 +1,5 @@
 // src/app/api/contact/route.ts
+// @ts-ignore
 import nodemailer from "nodemailer";
 import { NextResponse } from "next/server";
 

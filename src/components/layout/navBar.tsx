@@ -5,6 +5,7 @@ import { useState } from "react";
 import styles from "./navbar.module.css";
 import { Menu } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,7 +18,7 @@ export default function Navbar() {
     <nav className={styles.navbar}>
       <div className={styles.container}>
         <Link href="/">
-          <img src="/logo.png" alt="Logo" className={styles.logo} />
+          <Image src="/logo.png" alt="Logo" className={styles.logo} width={80} height={40} />
         </Link>
 
         <button className={styles.menuBtn} onClick={toggleMenu}>
