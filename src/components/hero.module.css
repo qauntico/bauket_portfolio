@@ -56,9 +56,6 @@
     text-align: start;
     width: 100%;
   }
-  .threeDModel{
-   margin-top: 100px;
-  }
 
   @media (max-width: 1700px ) {
     /* .threeDModel{
