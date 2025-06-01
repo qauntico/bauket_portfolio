@@ -18,7 +18,7 @@ export default function Hero() {
         {/* Text Content */}
         <div className={styles.textBlock}>
           <h1 className={styles.title}>
-            Hi, I'm <span className={styles.highlight}>Bauket Fabrice</span>
+            Hi, I&apos;m <span className={styles.highlight}>Bauket Fabrice</span>
           </h1>
           <p className={styles.subtitle}>
             A full stack web <br />

@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   keywords: ["portfolio", "web developer", "projects", "skills", "contact"],
   authors: [{ name: "Bauket Fabrice" }],
   icons: {
-    icon: "/vercel.svg", // Path relative to the /public folder
-    shortcut: "/vercel.svg", // Optional: for Apple and other shortcuts
-    apple: "/vercel.svg", // Optional: for iOS home screen icons
+    icon: "/logo.png", // Path relative to the /public folder
+    shortcut: "/logo.png", // Optional: for Apple and other shortcuts
+    apple: "/logo.png", // Optional: for iOS home screen icons
   },
 };
 

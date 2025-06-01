@@ -12,14 +12,14 @@ export default function Socials() {
     { title: "Google", icon: "/icons/google.png", link: "" },
   ];
   // Animation variants
-  const fadeInUp = {
-    hidden: { opacity: 0, y: -50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.8, ease: "easeOut" },
-    },
-  };
+  // const fadeInUp = {
+  //   hidden: { opacity: 0, y: -50 },
+  //   visible: {
+  //     opacity: 1,
+  //     y: 0,
+  //     transition: { duration: 0.8, ease: "easeOut" },
+  //   },
+  // };
   return (
     <section className={styles.section}>
       <motion.div

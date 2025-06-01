@@ -17,7 +17,7 @@ export default function Navbar() {
     <nav className={styles.navbar}>
       <div className={styles.container}>
         <Link href="/">
-          <img src="/vercel.svg" alt="Logo" className={styles.logo} />
+          <img src="/logo.png" alt="Logo" className={styles.logo} />
         </Link>
 
         <button className={styles.menuBtn} onClick={toggleMenu}>
