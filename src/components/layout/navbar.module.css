@@ -50,7 +50,7 @@
   @media screen and (max-width: 768px) {
     .navLinks {
       position: absolute;
-      top: 70;
+      top: 90;
       right: 0rem;
       background: #1f1f2e;
       border: 1px solid #171723;
