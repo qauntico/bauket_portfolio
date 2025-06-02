@@ -1,7 +1,7 @@
 'use client';
 
 import styles from './hero.module.css';
-import ThreeDModel from './subComponents/threeDModel';
+// import ThreeDModel from './subComponents/threeDModel';
 
 
 export default function Hero() {
@@ -28,7 +28,7 @@ export default function Hero() {
         </div>
       </div>
       <div className={styles.threeDModel}>
-        <ThreeDModel />
+        {/* <ThreeDModel /> */}
       </div>
     </section>
   );
