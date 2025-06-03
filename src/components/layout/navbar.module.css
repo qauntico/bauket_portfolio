@@ -1,7 +1,7 @@
 /* Navbar.module.css */
 .navbar {
     position: sticky;
-    top: 12;
+    top: 12px; /* Add px */
     z-index: 50;
     background-color: #1f1f2e;
     padding: 0.75rem 1.5rem;
@@ -16,6 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
   }
   
   .logo {
@@ -50,8 +51,8 @@
   @media screen and (max-width: 768px) {
     .navLinks {
       position: absolute;
-      top: 90;
-      right: 0rem;
+      top: 60px;
+      right: 1rem;
       background: #1f1f2e;
       border: 1px solid #171723;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
