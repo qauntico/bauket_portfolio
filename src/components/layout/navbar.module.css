@@ -51,8 +51,8 @@
   @media screen and (max-width: 768px) {
     .navLinks {
       position: absolute;
-      top: 60px;
-      right: 1rem;
+      top: 55px;
+      right: 1.5rem;
       background: #1f1f2e;
       border: 1px solid #171723;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
