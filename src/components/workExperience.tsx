@@ -18,6 +18,17 @@ const experiences = [
       "Worked with the frontend team to design and build some React components that made good use of the API endpoints I created, making sure the data showed correctly on the user interface."
     ],
   },
+   {
+    title: "Munich Tes",
+    summary:
+      "Fullstack Developer",
+    details: [
+      "Modified and improved features on the company’s job application portal (Munich Tes) built with React, Node js, resulting in a smoother user experience and faster navigation.",
+      "Set up a new database for the portal on Digital Ocean, handling the migration from the previous provider and adjusting access ports to strengthen security.",
+      "Packaged the application using Docker, which made deployments easier and improved portability. Hosting on Digital Ocean’s managed service led to a 10% increase in performance and reduced maintenance needs, while keeping costs within the company’s budget.",
+      "Ran tests comparing the updated system to the previous setup, confirming better reliability and efficiency; overall system performance improved by 13% after the updates.",
+    ],
+  },
   {
     title: "Ayatickets",
     summary:
