@@ -27,6 +27,7 @@ const experiences = [
       "Set up a new database for the portal on Digital Ocean, handling the migration from the previous provider and adjusting access ports to strengthen security.",
       "Packaged the application using Docker, which made deployments easier and improved portability. Hosting on Digital Ocean’s managed service led to a 10% increase in performance and reduced maintenance needs, while keeping costs within the company’s budget.",
       "Ran tests comparing the updated system to the previous setup, confirming better reliability and efficiency; overall system performance improved by 13% after the updates.",
+      "Connected the company’s WordPress application to the React app that's the job application portal, allowing users to access features and content from both platforms seamlessly."
     ],
   },
   {
